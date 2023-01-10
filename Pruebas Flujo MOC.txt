@@ -1,0 +1,28 @@
+PRUEBA 1:
+WS:
+http://10.112.99.82:8120/SCB-Honduras/procesaConsultas?solicitud=<Consulta><Pais>4</Pais><Canal>1</Canal><Sucursal>352</Sucursal><Solicitud>0</Solicitud><Rfc>0801199023135</Rfc><Paterno>PEÑA</Paterno><Materno>MATUTE</Materno><Nombre>JOSE MANUEL</Nombre><FechaDeNacimiento>1990-11-20</FechaDeNacimiento><Sexo>1</Sexo><Civil>2</Civil><Usuario>ADN</Usuario><Password>ADN01</Password></Consulta>
+
+Respuesta: 
+<?xml version = "1.0" encoding = "ISO-8859-1"?><respuesta id="4000000001321"><pais>4</pais><canal>1</canal><sucursal>352</sucursal><solicitud>4000000001321</solicitud><tipoRespuesta>1</tipoRespuesta><detallecon>Consultado ADN</detallecon></respuesta>
+
+
+WS: 
+http://10.112.99.82:8120/SCB-Honduras/informacionDeuda?pais=4&canal=1&sucursal=352&solicitud=4000000001321&identificacionPersona=0801199023135&usuario=ADN 
+
+Respuesta: 
+<?xml version = "1.0" encoding = "ISO-8859-1"?><respuesta>  <consulta>    <Pais>4</Pais>    <Canal>1</Canal>    <Sucursal>352</Sucursal>    <Solicitud>4000000001321</Solicitud>    <Usuario>ADN</Usuario>    <identificacionPersona>0801-1990-23135</identificacionPersona>    <clienteUnico></clienteUnico>  </consulta>  <SaldoVencidoTotal>0.00</SaldoVencidoTotal>  <reportesEnBuro>0</reportesEnBuro>  <enviaInvestigacion>SI</enviaInvestigacion>  <idConsulta>2813</idConsulta>  <mensaje>SI SE ENV A A INVESTIGAR</mensaje></respuesta>
+
+
+
+PRUEBA 2:
+WS: 
+http://10.112.99.82:8120/SCB-Honduras/procesaConsultas?solicitud=<Consulta><Pais>4</Pais><Canal>1</Canal><Sucursal>352</Sucursal><Solicitud>0</Solicitud><Rfc>0801199606229</Rfc><Paterno>ZEPEDA</Paterno><Materno>REYES</Materno><Nombre>ANTHONY ANDRE</Nombre><FechaDeNacimiento>1996-02-02</FechaDeNacimiento><Sexo>1</Sexo><Civil>3</Civil><Usuario>ADN</Usuario><Password>ADN01</Password></Consulta>
+
+Respuesta: 
+<?xml version = "1.0" encoding = "ISO-8859-1"?><respuesta id="4000000001323"><pais>4</pais><canal>1</canal><sucursal>352</sucursal><solicitud>4000000001323</solicitud><tipoRespuesta>1</tipoRespuesta><detallecon>Consultado ADN</detallecon></respuesta>
+
+WS: 
+http://10.112.99.82:8120/SCB-Honduras/informacionDeuda?pais=4&canal=1&sucursal=352&solicitud=4000000001323&identificacionPersona=0801199606229&usuario=ADN 
+
+Respuesta: 
+<?xml version = "1.0" encoding = "ISO-8859-1"?><respuesta>  <consulta>    <Pais>4</Pais>    <Canal>1</Canal>    <Sucursal>352</Sucursal>    <Solicitud>4000000001323</Solicitud>    <Usuario>ADN</Usuario>    <identificacionPersona>0801-1996-06229</identificacionPersona>    <clienteUnico></clienteUnico>  </consulta>  <SaldoVencidoTotal>0.00</SaldoVencidoTotal>  <reportesEnBuro>0</reportesEnBuro>  <enviaInvestigacion>SI</enviaInvestigacion>  <idConsulta>2814</idConsulta>  <mensaje>SI SE ENV A A INVESTIGAR</mensaje></respuesta>
